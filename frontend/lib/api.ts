@@ -110,14 +110,14 @@ export async function loadPersistedJobs(): Promise<JobListing[]> {
   const res = await fetch("/api/persist/job");
   if (!res.ok) throw new Error("Failed to load jobs");
   const data = (await res.json()) as { jobs: Array<Record<string, unknown>> };
-  return data.jobs.map((j) => ({
+  return data.jobs.map((j): JobListing => ({
     id: String(j.id ?? ""),
     company: String(j.company ?? ""),
     role: String(j.role ?? ""),
     location: String(j.location ?? "N/A"),
     applicationUrl: String(j.applicationUrl ?? ""),
     sourceUrl: String(j.sourceUrl ?? ""),
-    status: (j.status as string) || "not_applied",
+    status: (j.status === "applied" ? "applied" : "not_applied"),
     fetchedAt: typeof j.fetchedAt === "string" ? j.fetchedAt : typeof j.updatedAt === "string" ? j.updatedAt : undefined,
     fullDescription: String(j.fullDescription ?? ""),
   }));

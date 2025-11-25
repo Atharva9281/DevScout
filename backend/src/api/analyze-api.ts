@@ -9,6 +9,7 @@ import { join } from "@std/path";
 import { writeJsonFile } from "../utils/fs-helpers.ts";
 import { exists } from "@std/fs";
 import { TextDecoder } from "node:util";
+import pdfParse from "npm:pdf-parse@1.1.1";
 
 const uploadsDir = join(Deno.cwd(), "data", "uploads");
 const jobsDir = join(Deno.cwd(), "data", "jobs");
@@ -52,7 +53,7 @@ async function saveResumeFile(file: File): Promise<string> {
   return path;
 }
 
-function extractText(buffer: Uint8Array, mime: string, filename: string): string {
+async function extractText(buffer: Uint8Array, mime: string, filename: string): Promise<string> {
   console.log(`📄 Extracting text from ${filename} (${mime}, ${buffer.length} bytes)`);
   
   const tryDecode = (encoding: string) => {
@@ -66,43 +67,22 @@ function extractText(buffer: Uint8Array, mime: string, filename: string): string
     }
   };
 
-  // Heuristic PDF extraction: pull printable sequences to reduce gibberish
   if ((mime || filename).toLowerCase().includes("pdf")) {
-    console.warn("⚠️  PDF detected - using basic text extraction (may be incomplete)");
-    console.warn("   For best results, convert PDF to .txt or .docx before uploading");
-    
-    const raw = tryDecode("latin1") || tryDecode("utf-8");
-    if (raw) {
-      // Extract text between common PDF text markers
-      const textMarkers = raw.match(/\((.*?)\)/g);
-      if (textMarkers && textMarkers.length > 10) {
-        const extracted = textMarkers
-          .map(m => m.slice(1, -1))
-          .filter(t => t.length > 2)
-          .join(" ")
-          .replace(/\s+/g, " ")
-          .trim();
-        if (extracted.length > 100) {
-          console.log(`✓ Extracted ${extracted.length} chars from PDF`);
-          return extracted;
-        }
+    console.log("📄 PDF detected - using pdf-parse library");
+    try {
+      const data = await pdfParse(buffer);
+      const text = data.text.replace(/\s+/g, " ").trim();
+      if (text.length > 50) {
+        console.log(`✓ Extracted ${text.length} chars from PDF (${data.numpages} pages)`);
+        return text;
       }
-      
-      // Fallback: extract printable sequences
-      const tokens = raw.match(/[A-Za-z][A-Za-z\s,.]{8,}/g);
-      if (tokens && tokens.length) {
-        const joined = tokens.join(" ").replace(/\s+/g, " ").trim();
-        if (joined.length > 100) {
-          console.log(`✓ Extracted ${joined.length} chars using fallback`);
-          return joined;
-        }
-      }
+      console.warn("⚠️  PDF parsing returned insufficient text");
+    } catch (error) {
+      console.error("✗ PDF parsing failed:", error instanceof Error ? error.message : String(error));
     }
-    
-    return "[PDF text extraction failed - please upload as .txt or .docx]\n\nName: [Your Name]\nSkills: [List your skills]\nExperience: [Your experience]";
+    return "[PDF text extraction failed - please upload as .txt]\n\nName: [Your Name]\nSkills: [List your skills]\nExperience: [Your experience]";
   }
 
-  // Plain text files
   const cleaned = tryDecode("utf-8") || tryDecode("latin1");
   if (cleaned && cleaned.length > 50) {
     console.log(`✓ Extracted ${cleaned.length} chars`);
@@ -153,7 +133,7 @@ export async function startAPIServer(port = 8000): Promise<void> {
       }
       const path = await saveResumeFile(file);
       const buffer = new Uint8Array(await file.arrayBuffer());
-      const rawText = extractText(buffer, file.type, file.name);
+      const rawText = await extractText(buffer, file.type, file.name);
 
       const resume: ResumeData = {
         id: crypto.randomUUID(),

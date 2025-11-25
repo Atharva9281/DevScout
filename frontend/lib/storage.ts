@@ -1,4 +1,4 @@
-import type { AnalysisResult } from "./types";
+import type { AnalysisResult, JobListing } from "./types";
 
 const KEY = "devscout-analysis-cache";
 const JOB_KEY = "devscout-jobs-cache";

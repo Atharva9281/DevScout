@@ -1,6 +1,6 @@
-# 🎯 CoreSpeed - AI-Powered Job Application Copilot
+# 🎯 DevScout - AI-Powered Job Application Copilot
 
-> **Automate your job search with AI.** CoreSpeed analyzes job postings, matches them to your resume, and generates tailored application materials in seconds.
+> **Automate your job search with AI.** DevScout analyzes job postings, matches them to your resume, and generates tailored application materials in seconds.
 
 [![Powered by Claude](https://img.shields.io/badge/Powered%20by-Claude%20Sonnet%204-8A2BE2)]()
 [![Next.js](https://img.shields.io/badge/Next.js-16.0-black)]()
@@ -8,9 +8,9 @@
 
 ---
 
-## 🌟 What is CoreSpeed?
+## 🌟 What is Devscout?
 
-CoreSpeed is an end-to-end job application assistant that:
+DevScout is an end-to-end job application assistant that:
 
 - **🔍 Searches** thousands of job postings from top platforms (Greenhouse, Lever, Ashby, etc.)
 - **📊 Analyzes** each role against your resume using AI
@@ -23,7 +23,7 @@ CoreSpeed is an end-to-end job application assistant that:
 
 ## 🎬 Demo
 
-![CoreSpeed Dashboard](https://via.placeholder.com/800x400?text=Dashboard+Screenshot)
+![DevScout Dashboard](https://via.placeholder.com/800x400?text=Dashboard+Screenshot)
 *Search jobs, view fit scores, and analyze matches*
 
 ![AI Analysis](https://via.placeholder.com/800x400?text=Analysis+Workspace)
@@ -367,15 +367,3 @@ MIT License - see [LICENSE](LICENSE) file
 - **Firecrawl** - Job search API
 - **Neon** - Serverless Postgres
 - **Zypher** - LLM orchestration
-
----
-
-## 📧 Contact
-
-Questions? Issues? Reach out:
-- GitHub Issues: [github.com/yourusername/corespeed/issues](https://github.com/yourusername/corespeed/issues)
-- Email: your.email@example.com
-
----
-
-**Made with ❤️ for job seekers everywhere**

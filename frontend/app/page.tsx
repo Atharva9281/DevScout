@@ -39,12 +39,7 @@ export default function Home() {
       statusFilter === "all"
         ? jobs
         : jobs.filter((j) => (statusFilter === "applied" ? j.status === "applied" : j.status !== "applied"));
-    // Sort newest added first by fetchedAt/updated_at; fallback to original order
-    return [...base].sort((a, b) => {
-      const ta = a.fetchedAt ? new Date(a.fetchedAt).getTime() : 0;
-      const tb = b.fetchedAt ? new Date(b.fetchedAt).getTime() : 0;
-      return tb - ta;
-    });
+    return base;
   }, [jobs, statusFilter]);
   const pagedJobs = useMemo(() => {
     const start = (page - 1) * pageSize;
@@ -105,23 +100,27 @@ export default function Home() {
 
     try {
       await analyzeJobSSE(job, resume, ({ type, data }) => {
-        if (type === "status" && data?.message) {
-          setStatus(data.message);
-          setFeed((prev) => [{ id: `${Date.now()}`, text: data.message }, ...prev].slice(0, 50));
+        if (type === "status" && data && typeof data === "object" && "message" in data) {
+          const msg = (data as { message: string }).message;
+          setStatus(msg);
+          setFeed((prev) => [{ id: `${Date.now()}`, text: msg }, ...prev].slice(0, 50));
         }
-        if (type === "step" && data?.steps) {
-          const incoming = data.steps as StepTiming[];
+        if (type === "step" && data && typeof data === "object" && "steps" in data) {
+          const incoming = (data as { steps: StepTiming[] }).steps;
           setSteps(incoming);
           const latest = [...incoming].reverse().find((s) => s.status === "running" || s.status === "completed");
           if (latest) {
             setFeed((prev) => [{ id: `${Date.now()}`, text: `Step: ${latest.name}` }, ...prev].slice(0, 50));
           }
         }
-        if (type === "tool" && data?.tool) {
-          setFeed((prev) => [{ id: `${Date.now()}`, text: `Tool: ${data.tool}` }, ...prev].slice(0, 50));
+        if (type === "tool" && data && typeof data === "object" && "tool" in data) {
+          const tool = (data as { tool: string }).tool;
+          setFeed((prev) => [{ id: `${Date.now()}`, text: `Tool: ${tool}` }, ...prev].slice(0, 50));
         }
-        if (type === "result") {
-          const result = data.result ? (data.result as AnalysisResult) : (data as AnalysisResult);
+        if (type === "result" && data) {
+          const result = (data && typeof data === "object" && "result" in data) 
+            ? (data as { result: AnalysisResult }).result 
+            : (data as AnalysisResult);
           setAnalysis(result);
           setAnalysisStore((prev) => ({ ...prev, [job.id]: result }));
           persistAnalysisResult(result).catch(() => {});
@@ -148,7 +147,7 @@ export default function Home() {
       .then((persisted) => {
         if (persisted.length) {
           setJobs((prev) => {
-            const all = [...persisted, ...prev];
+            const all = [...prev, ...persisted];
             const seen = new Set<string>();
             return all.filter((j) => {
               const key = j.id;
@@ -243,13 +242,18 @@ export default function Home() {
     <main className="min-h-screen bg-[#0f0f10] text-[#e6e6e6] flex flex-col">
       <LoadingOverlay visible={isLoading} message={status} />
       <Navbar
+        resumeFileName={resume?.meta.filename}
         onUploadClick={async (file) => {
+          setIsLoading(true);
+          setStatus(`Uploading ${file.name}...`);
           try {
             const res = await uploadResume(file);
             setResume(res);
             setStatus(`Resume loaded: ${res.meta.filename}`);
           } catch (err) {
-          setStatus((err as Error).message);
+            setStatus((err as Error).message);
+          } finally {
+            setIsLoading(false);
           }
         }}
       />
