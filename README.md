@@ -55,10 +55,9 @@ CoreSpeed is an end-to-end job application assistant that:
 - Sort by date added, status, company
 - Quick search and filters
 
-### 💾 **Export & Share**
-- Download analysis as Markdown or JSON
-- Shareable analysis links
-- Copy bullets/cover letter with one click
+### 💾 **Improvements**
+- Copy bullets points to Enhance Resume
+- Now never miss a Cover Letter 
 
 ---
 
