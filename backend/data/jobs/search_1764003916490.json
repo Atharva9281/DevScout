@@ -1,0 +1,71 @@
+{
+  "query": "full stack engineer",
+  "results": [
+    {
+      "id": "GH_1234",
+      "company": "TechInnovate Solutions",
+      "role": "Full Stack Engineer",
+      "location": "San Francisco, CA",
+      "applicationUrl": "https://greenhouse.io/job/tech-innovate-fs-engineer",
+      "sourceUrl": "https://greenhouse.io/job/tech-innovate-fs-engineer",
+      "fullDescription": "We are seeking a talented Full Stack Engineer to join our dynamic team. The ideal candidate will have strong skills in React, Node.js, and cloud technologies. Responsibilities include developing scalable web applications, collaborating with cross-functional teams, and implementing modern software architecture.",
+      "salary": "$120,000 - $150,000",
+      "postedDate": "2024-02-15",
+      "source": "firecrawl",
+      "status": "not_applied"
+    },
+    {
+      "id": "LV_5678",
+      "company": "CloudNative Dynamics",
+      "role": "Senior Full Stack Engineer",
+      "location": "Remote, US",
+      "applicationUrl": "https://lever.co/jobs/cloudnative-fullstack",
+      "sourceUrl": "https://lever.co/jobs/cloudnative-fullstack",
+      "fullDescription": "CloudNative Dynamics is looking for an experienced Full Stack Engineer to drive our product development. You'll work with cutting-edge technologies including TypeScript, GraphQL, Kubernetes, and microservices architecture. Strong problem-solving skills and passion for building scalable systems are key.",
+      "salary": "$130,000 - $170,000",
+      "postedDate": "2024-02-20",
+      "source": "firecrawl",
+      "status": "not_applied"
+    },
+    {
+      "id": "WF_9012",
+      "company": "StartUp Forge",
+      "role": "Full Stack Web Engineer",
+      "location": "New York, NY",
+      "applicationUrl": "https://wellfound.com/jobs/startup-forge-fullstack",
+      "sourceUrl": "https://wellfound.com/jobs/startup-forge-fullstack",
+      "fullDescription": "Early-stage startup seeking a versatile Full Stack Engineer to build and iterate on our core product. Experience with React, Node.js, and AWS is required. You'll be responsible for both frontend and backend development, working closely with product and design teams.",
+      "salary": "$110,000 - $140,000",
+      "postedDate": "2024-02-18",
+      "source": "firecrawl",
+      "status": "not_applied"
+    },
+    {
+      "id": "YC_3456",
+      "company": "AI Innovations Inc",
+      "role": "Full Stack Engineer (AI Platform)",
+      "location": "Palo Alto, CA",
+      "applicationUrl": "https://ycombinator.com/jobs/ai-innovations-fullstack",
+      "sourceUrl": "https://ycombinator.com/jobs/ai-innovations-fullstack",
+      "fullDescription": "Join our cutting-edge AI team as a Full Stack Engineer. We're building an advanced AI platform requiring expertise in modern web technologies, machine learning integration, and scalable system design. Python, React, and cloud-native technologies are essential.",
+      "salary": "$140,000 - $180,000",
+      "postedDate": "2024-02-22",
+      "source": "firecrawl",
+      "status": "not_applied"
+    },
+    {
+      "id": "ASH_7890",
+      "company": "FinTech Solutions Group",
+      "role": "Full Stack Software Engineer",
+      "location": "Austin, TX",
+      "applicationUrl": "https://ashbyhq.com/jobs/fintech-fullstack",
+      "sourceUrl": "https://ashbyhq.com/jobs/fintech-fullstack",
+      "fullDescription": "FinTech Solutions is expanding our engineering team with a Full Stack Engineer who can develop robust, secure financial web applications. Strong background in JavaScript, Java, microservices, and financial technology platforms is required.",
+      "salary": "$115,000 - $145,000",
+      "postedDate": "2024-02-16",
+      "source": "firecrawl",
+      "status": "not_applied"
+    }
+  ],
+  "fetchedAt": "2025-11-24T17:05:16.478Z"
+}

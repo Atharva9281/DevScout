@@ -1,0 +1,34 @@
+{
+  "job": {
+    "id": "https://job-boards.greenhouse.io/spacex/jobs/8300183002?gh_jid=8300183002",
+    "company": "SpaceX",
+    "role": "Full Stack Software Engineer (Application Software)",
+    "location": "United States",
+    "applicationUrl": "https://job-boards.greenhouse.io/spacex/jobs/8300183002?gh_jid=8300183002",
+    "sourceUrl": "https://job-boards.greenhouse.io/spacex/jobs/8300183002?gh_jid=8300183002",
+    "fullDescription": "Full Stack Software Engineer role at SpaceX developing application software",
+    "salary": null,
+    "postedDate": null,
+    "source": "brave",
+    "status": "not_applied"
+  },
+  "resumeId": "920fcb79-8771-4b45-b552-41ae5f4b2b9d",
+  "summary": "The candidate demonstrates strong full-stack development skills with proficiency in JavaScript, Python, React, and Node.js, complemented by experience in agile methodologies and collaborative software development. Their technical expertise and problem-solving approach align well with the technical demands of a SpaceX Full Stack Software Engineer role.",
+  "tailoredBullets": [
+    "Developed full-stack web applications using JavaScript, Python, and modern front-end frameworks, demonstrating expertise in end-to-end software development",
+    "Implemented scalable and performant software solutions with strong problem-solving skills, consistently delivering high-quality code in collaborative team environments",
+    "Designed and maintained complex web applications with responsive UI/UX, leveraging React and Node.js to create efficient, user-centric software systems",
+    "Utilized agile methodologies to drive continuous integration and iterative development processes, ensuring rapid and reliable software delivery"
+  ],
+  "coverLetter": "As a passionate full-stack software engineer, I am deeply inspired by SpaceX's mission to revolutionize space technology and exploration. My technical expertise in full-stack development, combined with a commitment to innovation and precision, positions me to contribute meaningfully to your groundbreaking application software initiatives.",
+  "missingSkills": [],
+  "recommendedLearning": [],
+  "fitScores": {
+    "fit": 0,
+    "skills": 0,
+    "experience": 0,
+    "overall": 0
+  },
+  "suitability": "moderate fit",
+  "savedTo": "/Users/atharvakamble/Documents/CoreSpeed/backend/data/jobs/analysis_https___job-boards_greenhouse_io_spacex_jobs_8300183002_gh_jid_8300183002.json"
+}

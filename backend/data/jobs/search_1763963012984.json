@@ -1,0 +1,126 @@
+{
+  "query": "full stack software engineer ",
+  "results": [
+    {
+      "id": "8300183002",
+      "company": "SpaceX",
+      "role": "Full Stack Software Engineer (Application Software)",
+      "location": null,
+      "applicationUrl": "https://job-boards.greenhouse.io/spacex/jobs/8300183002?gh_jid=8300183002",
+      "sourceUrl": "https://job-boards.greenhouse.io/spacex/jobs/8300183002?gh_jid=8300183002",
+      "fullDescription": "FULL STACK SOFTWARE ENGINEER (APPLICATION SOFTWARE) at SpaceX",
+      "salary": null,
+      "postedDate": null,
+      "source": "brave"
+    },
+    {
+      "id": "7395062",
+      "company": "CB Insights",
+      "role": "Full Stack Software Engineer III",
+      "location": null,
+      "applicationUrl": "https://job-boards.greenhouse.io/cbinsights/jobs/7395062",
+      "sourceUrl": "https://job-boards.greenhouse.io/cbinsights/jobs/7395062",
+      "fullDescription": "Consistently deliver well-engineered, tested solutions within agreed-upon timeframes. Share knowledge with colleagues and help identify opportunities for both frontend and backend architecture improvements. 5+ years of full-stack development experience building scalable applications using React, TypeScript, Python, and Go.",
+      "salary": null,
+      "postedDate": null,
+      "source": "brave"
+    },
+    {
+      "id": "7507813003",
+      "company": "Celonis",
+      "role": "Senior Full-Stack Software Engineer",
+      "location": null,
+      "applicationUrl": "https://job-boards.greenhouse.io/celonis/jobs/7507813003",
+      "sourceUrl": "https://job-boards.greenhouse.io/celonis/jobs/7507813003",
+      "fullDescription": "Mentor and support junior engineers, fostering a culture of learning and technical excellence. Troubleshoot, debug, and optimize existing systems to improve performance and user experience.",
+      "salary": null,
+      "postedDate": null,
+      "source": "brave"
+    },
+    {
+      "id": "4121090",
+      "company": "ZipRecruiter",
+      "role": "Full Stack Software Engineer",
+      "location": null,
+      "applicationUrl": "https://boards.greenhouse.io/ziprecruiter/jobs/4121090?t=89c6ee071us",
+      "sourceUrl": "https://boards.greenhouse.io/ziprecruiter/jobs/4121090?t=89c6ee071us",
+      "fullDescription": "Our team has a unique opportunity to work on applications at scale, serving millions of jobseekers and tens of thousands of customers. We're working on building an efficient marketplace of jobseekers and employers and need full-stack engineers to build fast, scalable, and effective applications.",
+      "salary": null,
+      "postedDate": null,
+      "source": "brave"
+    },
+    {
+      "id": "4032173005",
+      "company": "Chalk",
+      "role": "Full Stack Software Engineer",
+      "location": null,
+      "applicationUrl": "https://job-boards.greenhouse.io/chalkinc/jobs/4032173005",
+      "sourceUrl": "https://job-boards.greenhouse.io/chalkinc/jobs/4032173005",
+      "fullDescription": "We are looking for software engineers who are comfortable solving business problems across all layers of the software stack.",
+      "salary": null,
+      "postedDate": null,
+      "source": "brave"
+    },
+    {
+      "id": "4990516008",
+      "company": "The Swift Group",
+      "role": "Full Stack Software Engineer",
+      "location": null,
+      "applicationUrl": "https://job-boards.greenhouse.io/theswiftgroup/jobs/4990516008",
+      "sourceUrl": "https://job-boards.greenhouse.io/theswiftgroup/jobs/4990516008",
+      "fullDescription": "The Swift Group is looking for a skilled Full Stack Software Engineer to support the new development, enhancement, and Operations and Maintenance of a Web and Mobile system focused on providing customers a data-driven, visually intuitive way.",
+      "salary": null,
+      "postedDate": null,
+      "source": "brave"
+    },
+    {
+      "id": "5702500004",
+      "company": "Fresh Prints",
+      "role": "Full Stack Senior Software Engineer",
+      "location": null,
+      "applicationUrl": "https://job-boards.greenhouse.io/freshprints/jobs/5702500004",
+      "sourceUrl": "https://job-boards.greenhouse.io/freshprints/jobs/5702500004",
+      "fullDescription": "Engineers should not be gatekeepers, but instead enablers using their deep expertise to empower rapid innovation across the entire org. At Fresh Prints, we're in the middle of reshaping our Tech team into one that both 1) uses AI to build better and faster and 2) develops generative AI so that we can better serve customers and the business. We're looking for confident full stack software engineers who want to dive into all of it with us.",
+      "salary": null,
+      "postedDate": null,
+      "source": "brave"
+    },
+    {
+      "id": "5692552004",
+      "company": "ClickHouse",
+      "role": "Full Stack Software Engineer - AI/ML",
+      "location": null,
+      "applicationUrl": "https://job-boards.greenhouse.io/clickhouse/jobs/5692552004",
+      "sourceUrl": "https://job-boards.greenhouse.io/clickhouse/jobs/5692552004",
+      "fullDescription": "We are looking for a Senior Full Stack Engineer to drive the development of AI/ML-powered features in ClickHouse Cloud.",
+      "salary": null,
+      "postedDate": null,
+      "source": "brave"
+    },
+    {
+      "id": "6642609003",
+      "company": "AMP Sortation",
+      "role": "Full Stack Software Engineer",
+      "location": "Remote",
+      "applicationUrl": "https://job-boards.greenhouse.io/ampsortation/jobs/6642609003",
+      "sourceUrl": "https://job-boards.greenhouse.io/ampsortation/jobs/6642609003",
+      "fullDescription": "AMP is hiring a Full-stack Software Engineer reporting to Engineering Manager, Machine Learning on a remote basis.",
+      "salary": null,
+      "postedDate": null,
+      "source": "brave"
+    },
+    {
+      "id": "5670380004",
+      "company": "Pine Park Health",
+      "role": "Senior Full Stack Software Engineer",
+      "location": null,
+      "applicationUrl": "https://job-boards.greenhouse.io/pineparkhealth/jobs/5670380004",
+      "sourceUrl": "https://job-boards.greenhouse.io/pineparkhealth/jobs/5670380004",
+      "fullDescription": "We're looking for a Senior Fullstack Software Engineer who embodies the qualities that make our current team exceptional: technical excellence combined with sharp product intuition.",
+      "salary": null,
+      "postedDate": null,
+      "source": "brave"
+    }
+  ],
+  "fetchedAt": "2025-11-24T05:43:32.981Z"
+}

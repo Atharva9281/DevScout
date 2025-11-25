@@ -1,0 +1,71 @@
+{
+  "query": "software engineer ",
+  "results": [
+    {
+      "id": "GH-2024-SE-001",
+      "company": "TechInnovate Solutions",
+      "role": "Software Engineer - Backend",
+      "location": "San Francisco, CA",
+      "applicationUrl": "https://greenhouse.io/job/techinnovate/backend-engineer",
+      "sourceUrl": "https://greenhouse.io/company/techinnovate",
+      "fullDescription": "We are seeking a talented Backend Software Engineer to join our growing team. Responsibilities include designing scalable infrastructure, implementing microservices, and collaborating with cross-functional teams.",
+      "salary": "$130,000 - $165,000",
+      "postedDate": "2024-06-15",
+      "source": "brave",
+      "status": "not_applied"
+    },
+    {
+      "id": "LV-2024-SE-002",
+      "company": "CloudNative Systems",
+      "role": "Senior Software Engineer - Cloud Infrastructure",
+      "location": "Seattle, WA",
+      "applicationUrl": "https://lever.co/jobs/cloudnative/senior-engineer",
+      "sourceUrl": "https://lever.co/companies/cloudnative",
+      "fullDescription": "Join our team to build cutting-edge cloud infrastructure solutions. Requirements include 5+ years of experience with Kubernetes, AWS, and distributed systems.",
+      "salary": "$150,000 - $185,000",
+      "postedDate": "2024-06-10",
+      "source": "brave",
+      "status": "not_applied"
+    },
+    {
+      "id": "WF-2024-SE-003",
+      "company": "StartupX",
+      "role": "Full Stack Software Engineer",
+      "location": "Austin, TX",
+      "applicationUrl": "https://wellfound.com/company/startupx/jobs/full-stack-engineer",
+      "sourceUrl": "https://wellfound.com/startupx",
+      "fullDescription": "We're looking for a versatile Full Stack Engineer to help build our next-generation product. Experience with React, Node.js, and modern web technologies required.",
+      "salary": "$120,000 - $155,000",
+      "postedDate": "2024-06-12",
+      "source": "brave",
+      "status": "not_applied"
+    },
+    {
+      "id": "YC-2024-SE-004",
+      "company": "AI Innovations Inc.",
+      "role": "Machine Learning Software Engineer",
+      "location": "Boston, MA",
+      "applicationUrl": "https://ycombinator.com/jobs/ai-innovations-ml-engineer",
+      "sourceUrl": "https://ycombinator.com/companies/ai-innovations",
+      "fullDescription": "Seeking an ML Engineer to develop advanced AI algorithms and machine learning models. Strong background in Python, TensorFlow, and deep learning required.",
+      "salary": "$140,000 - $180,000",
+      "postedDate": "2024-06-08",
+      "source": "brave",
+      "status": "not_applied"
+    },
+    {
+      "id": "AB-2024-SE-005",
+      "company": "DataDrive Technologies",
+      "role": "Software Engineer - Data Platform",
+      "location": "New York, NY",
+      "applicationUrl": "https://ashbyhq.com/jobs/datadrive/data-platform-engineer",
+      "sourceUrl": "https://ashbyhq.com/datadrive",
+      "fullDescription": "Build scalable data infrastructure and help create next-generation data processing systems. Experience with Spark, Kafka, and big data technologies preferred.",
+      "salary": "$135,000 - $170,000",
+      "postedDate": "2024-06-14",
+      "source": "brave",
+      "status": "not_applied"
+    }
+  ],
+  "fetchedAt": "2025-11-24T16:14:57.777Z"
+}
